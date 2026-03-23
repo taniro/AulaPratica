@@ -14,6 +14,7 @@ public class LoginController {
 
     @RequestMapping("/dashboard")
     public void exibirDashboard(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        /*
         // O parâmetro 'false' NÃO cria uma sessão nova. Apenas retorna se existir.
         HttpSession session = request.getSession(false);
 
@@ -26,6 +27,12 @@ public class LoginController {
 
         // Se chegou aqui, o usuário está logado
         Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+
+         */
+
+        HttpSession session = request.getSession(false);
+        Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+
 
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
