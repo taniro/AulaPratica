@@ -37,6 +37,7 @@ public class FundamentosHttpController {
 
     }
 
+    /*
     @RequestMapping("/tarefas")
     public void gerenciarRotas(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String metodo = request.getMethod();
@@ -50,6 +51,8 @@ public class FundamentosHttpController {
         }
 
     }
+
+     */
 
     private void processarGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         var writer = response.getWriter();

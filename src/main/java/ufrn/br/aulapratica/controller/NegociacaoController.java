@@ -17,8 +17,8 @@ public class NegociacaoController {
     private static final List<Tarefa> tarefas = new ArrayList<>();
 
     static {
-        tarefas.add(new Tarefa(1L, "Configurar Banco de Dados"));
-        tarefas.add(new Tarefa(2L, "Implementar Login"));
+        tarefas.add(new Tarefa("Configurar Banco de Dados"));
+        tarefas.add(new Tarefa("Implementar Login"));
     }
 
     @RequestMapping("/api/tarefas")
